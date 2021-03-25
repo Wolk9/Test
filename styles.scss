@@ -1,0 +1,99 @@
+/* Variables */
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap");
+/* Global */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #c3cfe2;
+}
+
+p {
+  width: 100%;
+  margin: 10%;
+  font-family: "lato";
+  font-weight: 400;
+  font-size: 18pt;
+  color: red;
+}
+.card {
+  position: absolute;
+  //   background-color: black;
+  //   display: grid;
+  //   grid-template-rows: 350px 0px 150px;
+  //   grid-auto-flow: column;
+  //   min-height: 500px;
+  //   border-radius: 20pt;
+  //   max-width: 400px;
+  //   width: 400px;
+  opacity: 1;
+
+  img {
+    width: 405px;
+    height: auto;
+  }
+
+  &:hover {
+    opacity: 0.1;
+    transition-property: opacity;
+    transition-duration: 2s;
+    transition-delay: 0s;
+    transition-timing-function: ease-in-out;
+  }
+
+  //   &__body {
+  //     position: absolute;
+  //     min-height: 350px;
+  //     max-width: 400px;
+  //     width: 400px;
+  //     top: 0px;
+  //     left: 0px;
+  //     background-color: black;
+  //     border-radius: 20px 20px 0px 0px;
+  //     border: 3pt dotted grey;
+  //     transition-property: opacity;
+  //     transition-duration: 1s;
+  //     transition-delay: 0s;
+  //     transition-timing-function: ease-in-out;
+
+  //     &:hover {
+  //       opacity: 0.1;
+  //     }
+  //   }
+  //   &__footer {
+  //     position: absolute;
+  //     min-height: 150px;
+  //     max-width: 400px;
+  //     width: 400px;
+  //     top: 350px;
+  //     left: 0px;
+  //     background-color: yellow;
+  //     border-radius: 0px 0px 20px 20px;
+  //     border: 3pt dotted grey;
+  //     transition-property: opacity;
+  //     transition-duration: 1s;
+  //     transition-delay: 0s;
+  //     transition-timing-function: ease-in-out;
+
+  //     &:hover {
+  //       opacity: 0.1;
+  //     }
+
+  &--button {
+    position: relative;
+    top: 250px;
+    left: 160px;
+    opacity: 1;
+    display: none;
+
+    &:hover {
+      display: initial;
+      opacity: 1;
+      transition-property: opacity;
+      transition-duration: 1s;
+      transition-delay: 0s;
+      transition-timing-function: ease-in-out;
+    }
+  }
+}

@@ -1,0 +1,50 @@
+/* Variables */
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap");
+/* Global */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #c3cfe2;
+}
+
+p {
+  width: 100%;
+  margin: 10%;
+  font-family: "lato";
+  font-weight: 400;
+  font-size: 18pt;
+  color: red;
+}
+
+.card {
+  position: absolute;
+  opacity: 1;
+}
+.card img {
+  width: 405px;
+  height: auto;
+}
+.card:hover {
+  opacity: 0.1;
+  transition-property: opacity;
+  transition-duration: 2s;
+  transition-delay: 0s;
+  transition-timing-function: ease-in-out;
+}
+.card--button {
+  position: relative;
+  top: 250px;
+  left: 160px;
+  opacity: 1;
+  display: none;
+}
+.card--button:hover {
+  display: initial;
+  opacity: 1;
+  transition-property: opacity;
+  transition-duration: 1s;
+  transition-delay: 0s;
+  transition-timing-function: ease-in-out;
+}/*# sourceMappingURL=styles.css.map */
