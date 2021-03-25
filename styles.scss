@@ -17,83 +17,45 @@ p {
   font-size: 18pt;
   color: red;
 }
-.card {
-  position: absolute;
-  //   background-color: black;
-  //   display: grid;
-  //   grid-template-rows: 350px 0px 150px;
-  //   grid-auto-flow: column;
-  //   min-height: 500px;
-  //   border-radius: 20pt;
-  //   max-width: 400px;
-  //   width: 400px;
-  opacity: 1;
 
-  img {
-    width: 405px;
-    height: auto;
-  }
-
-  &:hover {
-    opacity: 0.1;
-    transition-property: opacity;
-    transition-duration: 2s;
-    transition-delay: 0s;
-    transition-timing-function: ease-in-out;
-  }
-
-  //   &__body {
-  //     position: absolute;
-  //     min-height: 350px;
-  //     max-width: 400px;
-  //     width: 400px;
-  //     top: 0px;
-  //     left: 0px;
-  //     background-color: black;
-  //     border-radius: 20px 20px 0px 0px;
-  //     border: 3pt dotted grey;
-  //     transition-property: opacity;
-  //     transition-duration: 1s;
-  //     transition-delay: 0s;
-  //     transition-timing-function: ease-in-out;
-
-  //     &:hover {
-  //       opacity: 0.1;
-  //     }
-  //   }
-  //   &__footer {
-  //     position: absolute;
-  //     min-height: 150px;
-  //     max-width: 400px;
-  //     width: 400px;
-  //     top: 350px;
-  //     left: 0px;
-  //     background-color: yellow;
-  //     border-radius: 0px 0px 20px 20px;
-  //     border: 3pt dotted grey;
-  //     transition-property: opacity;
-  //     transition-duration: 1s;
-  //     transition-delay: 0s;
-  //     transition-timing-function: ease-in-out;
-
-  //     &:hover {
-  //       opacity: 0.1;
-  //     }
-
-  &--button {
-    position: relative;
-    top: 250px;
-    left: 160px;
+div {
+  &.card {
     opacity: 1;
-    display: none;
+    width: fit-content;
+    height: fit-content;
+    z-index: -1;
+
+    img {
+      width: 405px;
+      height: auto;
+    }
 
     &:hover {
-      display: initial;
-      opacity: 1;
+      opacity: 0.1;
       transition-property: opacity;
-      transition-duration: 1s;
+      transition-duration: 0.3s;
       transition-delay: 0s;
       transition-timing-function: ease-in-out;
+    }
+  }
+  &.btn {
+    position: relative;
+    top: -200px;
+    left: 125px;
+    opacity: 0;
+    z-index: 10;
+
+    &:hover {
+      opacity: 1;
+    }
+    button {
+      width: 150px;
+      height: 40px;
+      opacity: 0.5;
+
+      &:hover {
+        opacity: 1;
+      }
     }
   }
 }

@@ -18,33 +18,42 @@ p {
   color: red;
 }
 
-.card {
-  position: absolute;
+div.card {
   opacity: 1;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  z-index: -1;
 }
-.card img {
+div.card img {
   width: 405px;
   height: auto;
 }
-.card:hover {
+div.card:hover {
   opacity: 0.1;
   transition-property: opacity;
-  transition-duration: 2s;
+  transition-duration: 0.3s;
   transition-delay: 0s;
   transition-timing-function: ease-in-out;
 }
-.card--button {
+div.btn {
   position: relative;
-  top: 250px;
-  left: 160px;
-  opacity: 1;
-  display: none;
+  top: -200px;
+  left: 125px;
+  opacity: 0;
+  z-index: 10;
 }
-.card--button:hover {
-  display: initial;
+div.btn:hover {
   opacity: 1;
-  transition-property: opacity;
-  transition-duration: 1s;
-  transition-delay: 0s;
-  transition-timing-function: ease-in-out;
+}
+div.btn button {
+  width: 150px;
+  height: 40px;
+  opacity: 0.5;
+}
+div.btn button:hover {
+  opacity: 1;
 }/*# sourceMappingURL=styles.css.map */
